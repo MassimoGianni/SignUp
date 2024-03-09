@@ -1,0 +1,31 @@
+@model Prenotazione;
+
+@{
+    ViewData["Title"] = "Comprare";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Conferma Prenotazione</h1>
+
+    <p>Grazie per aver prenotato!</p>
+    <p>Ecco un riepilogo dei dati inseriti:</p>
+
+    <dl class="row">
+        <dt class="col-sm-3">Nome:</dt>
+        <dd class="col-sm-9">@Model.Nome</dd>
+
+        <dt class="col-sm-3">Cognome:</dt>
+        <dd class="col-sm-9">@Model.Cognome</dd>
+
+        <dt class="col-sm-3">Email:</dt>
+        <dd class="col-sm-9">@Model.Email</dd>
+
+        <dt class="col-sm-3">Sesso:</dt>
+        <dd class="col-sm-9">@Model.Sesso</dd>
+
+        <dt class="col-sm-3">Ruolo:</dt>
+        <dd class="col-sm-9">@Model.Ruolo</dd>
+    </dl>
+
+    <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Torna alla Home</a>
+</div>

@@ -1,0 +1,10 @@
+@model Purchasing
+
+@{
+    ViewData["Title"] = "Cart";
+}
+
+@if (Model != null)
+{
+    <p>Ultimo acquisto: <br> Nome prodotto: @Model.nomeProdotto <br> Quantità: @Model.Quantita </p>
+}
